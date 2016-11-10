@@ -1,0 +1,143 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto';
+}
+.grid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 1px;
+}
+@media (min-width: 768px) {
+  .grid {
+   width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .grid {
+	width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .grid {
+    width: 1155px;
+  }
+}
+.grid-wide {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/** 1. Header and Navigation **/
+header {
+	background: #fff;
+	padding: 0;
+	width: 100%;
+	z-index: 20;
+	min-height: 50px;
+	border-bottom: 1px solid #E3E3E3;
+}
+header a.header {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-decoration: none;
+	padding: 15px 0px 0px;
+	float: left;
+	font-weight: 600;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+header .navbar {
+	display: inline;
+	float:right;
+}
+@media (min-width: 768px) {
+	header .navbar {
+		display: block;
+	}
+}
+header .navbar  ul {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 55px;
+	padding: 0;
+	margin: 0;
+	z-index: 3;
+	display: none;
+	border-bottom: 1px solid #E3E3E3;
+}
+@media (min-width: 768px) {
+	header .navbar ul {
+		background: transparent;
+		list-style: none;
+		display: block!important;
+		text-align: right;
+		margin: 0;
+		border: 0;
+		position: static;
+	}
+}
+header .navbar ul li {
+	display: block;
+}
+@media (min-width: 768px) {
+	header .navbar ul li {
+		display: inline;
+	}
+}
+header .navbar ul li a {
+	padding: 7.5px 15px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	display: block;
+	transition: color 0.4s;
+	letter-spacing: 1.25px;
+	border-bottom: 1px solid #E3E3E3;
+	color: #333;
+}
+@media (min-width: 768px) {
+	header .navbar ul li a:hover {
+		color: #e3e3e3;
+	}
+	header .navbar ul li a  {
+		display: inline-block;
+		padding: 17px 10px;
+		border: none;
+	}
+}
+header .navbar .navbar-open {
+  padding: 12px 0px 0px;
+	width:26px;
+	height:26px;
+	display: block;
+	cursor: pointer;
+}
+@media (min-width: 768px) {
+	header .navbar .navbar-open  {
+		display: none;
+	}
+}
+
+/** Sections **/
+section {
+	padding: 50px 0px 50px 0px;
+  background: rgb(245, 249, 249);
+	border-bottom: 1px solid #dfe5e8;
+}
+@media(min-width: 768px) {
+	section {
+		padding: 70px 0px 70px 0px;
+	}
+}
+section.white {
+  background: rgb(255,255,255);
+}
