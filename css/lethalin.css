@@ -29,7 +29,7 @@
 /* 1. Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
-	font-size: 100%;
+  font-size: 100%;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
@@ -37,8 +37,8 @@ body {
   margin: 0px;
   padding: 0px;
   -webkit-font-smoothing: antialiased;
-	font-size: 16px;
-	font-size: 1rem;
+  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Roboto'; }
 article,
 aside,
@@ -63,37 +63,37 @@ a:hover {
 /* 2. Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1 {
-	font-size: 32px;
-	font-size: 2rem;
-	font-weight: 300; }
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 300; }
 h2 {
-	font-size: 30px;
-	font-size: 1.875rem;
-	font-weight: 300; }
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 300; }
 h3 {
-	font-size: 24px;
-	font-size: 1.5rem;
-	font-weight: 300; }
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 300; }
 h4 {
-	font-size: 20px;
-	font-size: 1.25rem;
-	font-weight: 300; }
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 300; }
 h5 {
-	font-size: 18px;
-	font-size: 1.125rem;
-	font-weight: 300; }
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 300; }
 h6 {
-	font-size: 16px;
-	font-size: 1rem;
-	font-weight: 300; }
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 300; }
 a {
-	font-size: 16px;
-	font-size: 1rem;
-	font-weight: 300; }
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 300; }
 p {
-	font-size: 16px;
-	font-size: 1rem;
-	font-weight: 300; }
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 300; }
 
 /* 3. Responsive Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -109,7 +109,7 @@ p {
 }
 @media (min-width: 992px) {
   .grid {
-	   width: 100%; }
+    width: 100%; }
 }
 @media (min-width: 1200px) {
   .grid {
