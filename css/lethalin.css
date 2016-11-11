@@ -1,143 +1,212 @@
+/*
+* Skeleton V1.0.0
+* Copyright 2016, John Uberbacher
+* www.lethalin.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 11/9/2016
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+
+- 1. Base Styles
+- 2. Typography
+- 3. Responsive Grid
+- 4. Header & Navigation
+- 5. Sections
+- 6. Links
+- 7. Buttons
+- 8. Forms
+- 9. Lists
+- 10. Code
+- 11. Tables
+- 12. Utilities
+*/
+
+
+/* 1. Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html {
+	font-size: 100%;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Roboto';
-}
+  -webkit-font-smoothing: antialiased;
+	font-size: 16px;
+	font-size: 1rem;
+  font-family: 'Roboto'; }
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* 2. Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1 {
+	font-size: 32px;
+	font-size: 2rem;
+	font-weight: 300; }
+h2 {
+	font-size: 30px;
+	font-size: 1.875rem;
+	font-weight: 300; }
+h3 {
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: 300; }
+h4 {
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-weight: 300; }
+h5 {
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: 300; }
+h6 {
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 300; }
+a {
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 300; }
+p {
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 300; }
+
+/* 3. Responsive Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .grid {
+  position: relative;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
-  padding-right: 15px;
-  min-height: 1px;
-}
+  padding-right: 15px; }
 @media (min-width: 768px) {
   .grid {
-   width: 100%;
-  }
+    width: 100%; }
 }
 @media (min-width: 992px) {
   .grid {
-	width: 100%;
-  }
+	   width: 100%; }
 }
 @media (min-width: 1200px) {
   .grid {
-    width: 1155px;
-  }
-}
-.grid-wide {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+    width: 1155px; }
 }
 
-/** 1. Header and Navigation **/
+/* 4. Header & Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 header {
-	background: #fff;
-	padding: 0;
-	width: 100%;
-	z-index: 20;
-	min-height: 50px;
-	border-bottom: 1px solid #E3E3E3;
-}
+  background: #fff;
+  padding: 0;
+  width: 100%;
+  z-index: 20;
+  min-height: 50px;
+  border-bottom: 1px solid #E3E3E3; }
 header a.header {
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	text-decoration: none;
-	padding: 15px 0px 0px;
-	float: left;
-	font-weight: 600;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-}
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 15px 0px 0px;
+  float: left;
+  font-weight: 600;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
 header .navbar {
-	display: inline;
-	float:right;
-}
+  display: inline;
+  float:right; }
 @media (min-width: 768px) {
-	header .navbar {
-		display: block;
-	}
+  header .navbar {
+    display: block; }
 }
 header .navbar  ul {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	top: 55px;
-	padding: 0;
-	margin: 0;
-	z-index: 3;
-	display: none;
-	border-bottom: 1px solid #E3E3E3;
-}
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 55px;
+  padding: 0;
+  margin: 0;
+  z-index: 3;
+  display: none;
+  border-bottom: 1px solid #E3E3E3; }
 @media (min-width: 768px) {
-	header .navbar ul {
-		background: transparent;
-		list-style: none;
-		display: block!important;
-		text-align: right;
-		margin: 0;
-		border: 0;
-		position: static;
-	}
+  header .navbar ul {
+    background: transparent;
+    list-style: none;
+    display: block!important;
+    text-align: right;
+    margin: 0;
+    border: 0;
+    position: static; }
 }
 header .navbar ul li {
-	display: block;
-}
+  display: block; }
 @media (min-width: 768px) {
-	header .navbar ul li {
-		display: inline;
-	}
+  header .navbar ul li {
+    display: inline; }
 }
 header .navbar ul li a {
-	padding: 7.5px 15px;
-	text-decoration: none;
-	font-weight: 600;
-	font-size: 13px;
-	font-size: 0.8125rem;
-	display: block;
-	transition: color 0.4s;
-	letter-spacing: 1.25px;
-	border-bottom: 1px solid #E3E3E3;
-	color: #333;
-}
+  padding: 7.5px 15px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  display: block;
+  transition: color 0.4s;
+  letter-spacing: 1.25px;
+  border-bottom: 1px solid #E3E3E3; }
 @media (min-width: 768px) {
-	header .navbar ul li a:hover {
-		color: #e3e3e3;
-	}
-	header .navbar ul li a  {
-		display: inline-block;
-		padding: 17px 10px;
-		border: none;
-	}
+  header .navbar ul li a:hover {
+    color: #e3e3e3; }
+  header .navbar ul li a  {
+    display: inline-block;
+    padding: 17px 10px;
+    border: none; }
 }
 header .navbar .navbar-open {
   padding: 12px 0px 0px;
-	width:26px;
-	height:26px;
-	display: block;
-	cursor: pointer;
-}
+  width:26px;
+  height:26px;
+  display: block;
+  cursor: pointer; }
 @media (min-width: 768px) {
-	header .navbar .navbar-open  {
-		display: none;
-	}
+  header .navbar .navbar-open  {
+    display: none; }
 }
 
-/** Sections **/
+/* 5. Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 section {
-	padding: 50px 0px 50px 0px;
+  padding: 50px 0px 50px 0px;
   background: rgb(245, 249, 249);
-	border-bottom: 1px solid #dfe5e8;
-}
+  border-bottom: 1px solid #dfe5e8; }
 @media(min-width: 768px) {
-	section {
-		padding: 70px 0px 70px 0px;
-	}
+  section {
+    padding: 70px 0px 70px 0px; }
 }
 section.white {
-  background: rgb(255,255,255);
-}
+  background: rgb(255,255,255); }
