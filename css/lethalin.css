@@ -10,26 +10,24 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
-
 - 1. Base Styles
 - 2. Typography
 - 3. Responsive Grid
 - 4. Header & Navigation
 - 5. Sections
-- 6. Links
-- 7. Buttons
-- 8. Forms
-- 9. Lists
-- 10. Code
-- 11. Tables
-- 12. Utilities
+- 6. Links & Buttons
+- 7. Forms
+- 8. Lists
+- 9. Code
+- 10. Tables
+- 11. Utilities
 */
 
 
 /* 1. Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
-	font-size: 100%;
+  font-size: 100%;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
@@ -37,8 +35,8 @@ body {
   margin: 0px;
   padding: 0px;
   -webkit-font-smoothing: antialiased;
-	font-size: 16px;
-	font-size: 1rem;
+  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Roboto'; }
 article,
 aside,
@@ -63,37 +61,37 @@ a:hover {
 /* 2. Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1 {
-	font-size: 32px;
-	font-size: 2rem;
-	font-weight: 300; }
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 300; }
 h2 {
-	font-size: 30px;
-	font-size: 1.875rem;
-	font-weight: 300; }
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 300; }
 h3 {
-	font-size: 24px;
-	font-size: 1.5rem;
-	font-weight: 300; }
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 300; }
 h4 {
-	font-size: 20px;
-	font-size: 1.25rem;
-	font-weight: 300; }
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 300; }
 h5 {
-	font-size: 18px;
-	font-size: 1.125rem;
-	font-weight: 300; }
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 300; }
 h6 {
-	font-size: 16px;
-	font-size: 1rem;
-	font-weight: 300; }
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 300; }
 a {
-	font-size: 16px;
-	font-size: 1rem;
-	font-weight: 300; }
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 300; }
 p {
-	font-size: 16px;
-	font-size: 1rem;
-	font-weight: 300; }
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 300; }
 
 /* 3. Responsive Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -109,7 +107,7 @@ p {
 }
 @media (min-width: 992px) {
   .grid {
-	   width: 100%; }
+    width: 100%; }
 }
 @media (min-width: 1200px) {
   .grid {
@@ -126,12 +124,9 @@ header {
   min-height: 50px;
   border-bottom: 1px solid #E3E3E3; }
 header a.header {
-  text-transform: uppercase;
-  letter-spacing: 3px;
   text-decoration: none;
-  padding: 15px 0px 0px;
+  padding: 15px 0px 15px 0px;
   float: left;
-  font-weight: 600;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -172,19 +167,13 @@ header .navbar ul li {
 header .navbar ul li a {
   padding: 7.5px 15px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 13px;
-  font-size: 0.8125rem;
   display: block;
   transition: color 0.4s;
-  letter-spacing: 1.25px;
   border-bottom: 1px solid #E3E3E3; }
 @media (min-width: 768px) {
-  header .navbar ul li a:hover {
-    color: #e3e3e3; }
   header .navbar ul li a  {
     display: inline-block;
-    padding: 17px 10px;
+    padding: 15px 10px;
     border: none; }
 }
 header .navbar .navbar-open {
@@ -210,3 +199,29 @@ section {
 }
 section.white {
   background: rgb(255,255,255); }
+
+/* 5. Links & Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #33AFC8; }
+a:hover {
+  color: #257C8E; }
+a.button, input[type="submit"].button {
+  font-size: 16px;
+  font-size: 1rem;
+  background: #33AFC8;
+  color: #FFFFFF;
+  border: 1px solid;
+  border-color: #33AFC8;
+  border-radius: 3px;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(46, 58, 59, 0.25);
+  text-decoration: none;
+  margin: 0px 2.5px 15px; }
