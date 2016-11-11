@@ -1,5 +1,5 @@
 /*
-* Skeleton V1.0.0
+* Lethalin V1
 * Copyright 2016, John Uberbacher
 * www.lethalin.com
 * Free to use under the MIT license.
@@ -206,7 +206,7 @@ a {
   color: #33AFC8; }
 a:hover {
   color: #257C8E; }
-a.button, input[type="submit"].button {
+.button, a.button, input[type="submit"].button {
   font-size: 16px;
   font-size: 1rem;
   background: #33AFC8;
