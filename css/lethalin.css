@@ -1,5 +1,5 @@
 /*
-* Lethalin V1
+* Lethalin V1.3
 * Copyright 2016, John Uberbacher
 * www.lethalin.com
 * Free to use under the MIT license.
@@ -19,7 +19,7 @@
 - 7. Forms
 - 8. Images
 - 9. Lists
-- 10.
+- 10. Footer
 - 11. Utility Classes
 */
 
@@ -32,7 +32,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 body {
-  padding: 56px 0px 0px 0px;
+  padding: 0px;
   margin: 0px;
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
@@ -108,8 +108,7 @@ p {
   padding-right: 7.5px; }
 
 @media (min-width: 1018px) {
-  .grid {
-    width: 1000px; }
+  .grid { width: 1000px; }
 }
 .column {
   width: 100%;
@@ -219,15 +218,10 @@ header a.header {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
-header a.header img {
-  display: block;
-}
-header .navbar {
-  display: inline;
-  float:right; }
+header a.header img { display: block; }
+header .navbar { display: inline; float:right; }
 @media (min-width: 768px) {
-  header .navbar {
-    display: block; }
+  header .navbar { display: block; }
 }
 header .navbar  ul {
   position: absolute;
@@ -242,8 +236,8 @@ header .navbar  ul {
   border-bottom: 1px solid #E3E3E3;
   border-top: 1px solid #E3E3E3; }
 @media (min-width: 768px) {
-  header .navbar ul {
-	border-top: none;
+  header .navbar ul.nav-expand {
+    border-top: none;
     background: transparent;
     list-style: none;
     display: block!important;
@@ -252,21 +246,16 @@ header .navbar  ul {
     border: 0;
     position: static; }
 }
-
-header .navbar ul li.dropdown ul.dropdown-list{
-  display: none;
-}
-header .navbar ul li {
-  display: block; }
+header .navbar ul li { position: relative; display: block; }
 @media (min-width: 768px) {
-  header .navbar ul li {
-    display: inline; }
+  header .navbar ul li { display: inline; }
 }
 header .navbar ul li a {
   padding: 7.5px 15px;
   text-decoration: none;
   display: block;
   transition: color 0.4s;
+  cursor: pointer;
   border-bottom: 1px solid #E3E3E3; }
 @media (min-width: 768px) {
   header .navbar ul li a {
@@ -274,6 +263,26 @@ header .navbar ul li a {
     padding: 15px 10px;
     border: none; }
 }
+header .navbar ul.nav-expand li ul {
+  position: initial;
+  width: 100%;
+  top: 41px;
+  border: none;
+  background: rgb(245, 249, 249); }
+@media (min-width: 768px) {
+  header .navbar ul.nav-expand li ul {
+    position: absolute;
+    left: 0;
+    top: 37px;
+    border: 1px solid #E3E3E3;
+    width: 150px; }
+}
+header .navbar ul.nav-expand li ul li a {
+  display: block;
+  text-align: left;
+  padding: 7.5px 15px; }
+header .navbar ul.nav-expand li.dropdown:hover ul.dropdown-content {
+  display: block; }
 header .navbar .navbar-open {
   margin: 14px 7.5px 0px 0px;
   width:26px;
@@ -281,18 +290,16 @@ header .navbar .navbar-open {
   display: block;
   cursor: pointer; }
 @media (min-width: 768px) {
-  header .navbar .navbar-open  {
-    display: none; }
+  header .navbar .navbar-open { display: none; }
 }
 
 
 /* 5. Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 section {
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0px;
   background: rgb(245, 249, 249);
   border-bottom: 1px solid #dfe5e8; }
-section.white { background: rgb(255,255,255); }
 
 
 /* 6. Links & Buttons
@@ -339,45 +346,42 @@ label {
 input[type="text"], input[type="password"], input[type="email"],
 input[type="tel"], input[type="date"], input[type="number"],
 input[type="color"], input[type="url"] {
-  font-size: 16px;
-  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
-  padding: 10px 12.5px;
+  padding: 7.5px 10px 5px 10px;
   width: 100%;
   outline: none;
+  border-radius: 4px;
   border: 1px solid transparent;
-  border-color: #E5E1DC;
+  border-color: #dfe5e8;
   color: #6B645E;
-  margin-bottom: 15px; }
+  margin-bottom: 1em; }
 
 
 /* 8. Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.image {
-  width: 100%;
-  height: auto; }
+.image { width: 100%; height: auto; }
 .image-round { border-radius: 50%; }
 .image-rounded { border-radius: 6px; }
 
 
-/* 8. Images
+/* 9. Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
   list-style: circle outside;
   padding-left: 19px;
-  margin-top: 0px;
-}
+  margin-top: 0px; }
+
+
+/* 10. Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer { padding: 30px 0px; }
 
 
 /* 11. Utility Classes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-code {
-    padding: 3px 6px;
-    margin: 0 2px;
-    white-space: nowrap;
-    background: #F1F1F1;
-    border: 1px solid #E1E1E1;
-}
 .display-table { display: table!important; margin-left: auto; margin-right: auto; }
 .display-block { display: block!important; margin-left: auto; margin-right: auto; }
 .display-inline-block { display: inline-block!important; }
@@ -387,3 +391,4 @@ code {
 .text-center { text-align: center!important; }
 .text-right { text-align: right!important; }
 .text-left { text-align: left!important; }
+.text-justify { text-align: justify !important; }
