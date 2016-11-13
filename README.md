@@ -3,11 +3,13 @@ Lethalin is the new solution for front-end web develpment. One framework that sc
 
 Visit http://lethalin.com for more information and documentation.
 
-## Getting Started
-Coming Shortly!
-
 ## Get Lethalin
 For stable release, download Lethalin directly from http://lethalin.com
+
 Lethalin is available in minified CSS and sans-serif
 
+
 To clone directly from Github: `git clone https://github.com/johnuberbacher/Lethalin.git`
+
+## Getting Started
+Coming Shortly!
