@@ -192,7 +192,7 @@ header.sticky {
   left: 0;
   right: 0; }
 header a.header {
-  margin: 14px 0px 14px 7.5px;
+  margin: 5px 0px 0px 7.5px;
   text-decoration: none;
   float: left;
   user-select: none;
