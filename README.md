@@ -6,7 +6,7 @@ Visit http://lethalin.com for more information and documentation.
 ## Get Lethalin
 For stable release, download Lethalin directly from http://lethalin.com
 
-Lethalin is available in minified CSS and sans-serif
+Lethalin is also available in minified CSS
 
 
 To clone directly from Github: `git clone https://github.com/johnuberbacher/Lethalin.git`
