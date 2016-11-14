@@ -1,5 +1,5 @@
 /*
-* Lethalin V1.3
+* Lethalin v1.0
 * Copyright 2016, John Uberbacher
 * www.lethalin.com
 * Free to use under the MIT license.
@@ -19,7 +19,7 @@
 - 7. Forms
 - 8. Images
 - 9. Lists
-- 10. Footer
+- 10. Tables
 - 11. Utility Classes
 */
 
@@ -44,8 +44,8 @@ aside,
 footer,
 header,
 nav,
-section {
-  display: block; }
+section { display: block; }
+table { border-spacing: 0; border-collapse: collapse; }
 *,
 *:before,
 *:after {
@@ -58,48 +58,32 @@ a {
 a:active,
 a:hover { outline-width: 0; }
 
-input, textarea, select{ font-family:inherit; }
 /* 2. Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1 {
-  font-size: 32px;
-  font-size: 2rem;
-  font-weight: 300; }
-h2 {
-  font-size: 30px;
-  font-size: 1.875rem;
-  font-weight: 300; }
-h3 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  font-weight: 300; }
-h4 {
-  font-size: 20px;
-  font-size: 1.25rem;
-  font-weight: 300; }
-h5 {
-  font-size: 18px;
-  font-size: 1.125rem;
-  font-weight: 300; }
-h6 {
-  font-size: 16px;
-  font-size: 1rem;
-  font-weight: 300; }
-a {
-  font-size: 16px;
-  font-size: 1rem;
-  font-weight: 300; }
-p {
-  font-size: 16px;
-  font-size: 1rem;
-  font-weight: 300; }
+h1,h2,h3,h4,h5,h6,p { margin: 15px 0px; font-weight: 400;}
+h1 { font-size: 32px;
+  font-size: 2rem; }
+h2 { font-size: 30px;
+  font-size: 1.875rem; }
+h3 { font-size: 24px;
+  font-size: 1.5rem; }
+h4 { font-size: 20px;
+  font-size: 1.25rem; }
+h5 { font-size: 18px;
+  font-size: 1.125rem; }
+h6 { font-size: 16px;
+  font-size: 1rem; }
+a { font-size: 16px;
+  font-size: 1rem; }
+p { font-size: 16px;
+  font-size: 1rem; }
 
 
 /* 3. Responsive Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .grid {
   width: 100%;
-  display: table;
+  display:block;
   position: relative;
   margin-right: auto;
   margin-left: auto;
@@ -202,7 +186,7 @@ header {
   padding: 0;
   width: 100%;
   z-index: 20;
-  min-height: 50px;
+  min-height: 55px;
   border-bottom: 1px solid #E3E3E3; }
 header.sticky {
   position: fixed;
@@ -250,7 +234,7 @@ header .navbar ul li { position: relative; display: block; }
   header .navbar ul li { display: inline; }
 }
 header .navbar ul li a {
-  padding: 7.5px 15px;
+  padding: 10px 15px;
   text-decoration: none;
   display: block;
   transition: color 0.4s;
@@ -296,6 +280,7 @@ header .navbar .navbar-open {
 /* 5. Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 section {
+  display: flex;
   padding: 50px 0px;
   background: rgb(245, 249, 249);
   border-bottom: 1px solid #dfe5e8; }
@@ -337,16 +322,17 @@ label {
   text-transform: uppercase;
   font-size: 10px;
   font-size: 0.625rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1.5px;
   display: block;
   margin: 5px 0px; }
 input[type="text"], input[type="password"], input[type="email"],
 input[type="tel"], input[type="date"], input[type="number"],
-input[type="color"], input[type="url"] {
+input[type="color"], input[type="url"], textarea, select {
   font-size: 14px;
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: 400;
+  font-family:inherit;
   padding: 7.5px 10px 5px 10px;
   width: 100%;
   outline: none;
@@ -355,7 +341,13 @@ input[type="color"], input[type="url"] {
   border-color: #dfe5e8;
   color: #6B645E;
   margin-bottom: 1em; }
-
+textarea {
+  width: 100%;
+  overflow: auto;
+  max-width: 100%;
+  outline:none;
+  height: auto;
+	box-sizing: border-box;}
 
 /* 8. Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -372,10 +364,31 @@ ul {
   margin-top: 0px; }
 
 
-/* 10. Footer
+/* 10. Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-footer { padding: 30px 0px; }
-
+.table {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  display: block;
+  margin-bottom: 15px;
+  text-align: left; }
+.table table {
+  width: 100%;
+  max-width: 100%; }
+.table tbody { border: 1px solid #E1E1E1; }
+.table table tbody tr td { border-bottom: 1px solid #E1E1E1; }
+.table table tbody tr th  {
+  font-weight: 500;
+  white-space: nowrap;
+  border-bottom: 1px solid #E1E1E1;
+  margin: 0;
+  padding: 7.5px 15px; }
+.table table tbody tr td  {
+  padding: 7.5px 15px;
+  white-space: nowrap;
+  vertical-align: top; }
 
 /* 11. Utility Classes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
