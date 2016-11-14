@@ -1,5 +1,5 @@
 /*
-* Lethalin v1.0
+* Lethalin v1.0.1
 * Copyright 2016, John Uberbacher
 * www.lethalin.com
 * Free to use under the MIT license.
@@ -35,7 +35,6 @@ body {
   padding: 0px;
   margin: 0px;
   min-width: 320px;
-  -webkit-font-smoothing: antialiased;
   font-size: 16px;
   font-size: 1rem;
   font-family: 'Roboto', sans-serif; }
@@ -83,7 +82,6 @@ p { font-size: 16px;
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .grid {
   width: 100%;
-  display:block;
   position: relative;
   margin-right: auto;
   margin-left: auto;
@@ -202,7 +200,7 @@ header a.header {
   -webkit-user-select: none;
   -ms-user-select: none; }
 header a.header img { display: block; }
-header .navbar { display: inline; float:right; }
+header .navbar { float:right; }
 @media (min-width: 768px) {
   header .navbar { display: block; }
 }
@@ -295,8 +293,7 @@ a { color: #33AFC8; }
   font-size: 1rem;
   background: #33AFC8;
   color: #FFFFFF;
-  border: 1px solid;
-  border-color: #33AFC8;
+  border: 1px solid #33AFC8;
   border-radius: 4px;
   padding: 7.5px 15px;
   line-height: 1.6;
@@ -337,8 +334,7 @@ input[type="color"], input[type="url"], textarea, select {
   width: 100%;
   outline: none;
   border-radius: 4px;
-  border: 1px solid transparent;
-  border-color: #dfe5e8;
+  border: 1px solid #dfe5e8;
   color: #6B645E;
   margin-bottom: 1em; }
 textarea {
@@ -346,8 +342,7 @@ textarea {
   overflow: auto;
   max-width: 100%;
   outline:none;
-  height: auto;
-	box-sizing: border-box;}
+  height: auto; }
 
 /* 8. Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -378,14 +373,14 @@ ul {
   width: 100%;
   max-width: 100%; }
 .table tbody { border: 1px solid #E1E1E1; }
-.table table tbody tr td { border-bottom: 1px solid #E1E1E1; }
-.table table tbody tr th  {
+.table table tr td { border-bottom: 1px solid #E1E1E1; }
+.table table tr th  {
   font-weight: 500;
   white-space: nowrap;
   border-bottom: 1px solid #E1E1E1;
   margin: 0;
   padding: 7.5px 15px; }
-.table table tbody tr td  {
+.table table td  {
   padding: 7.5px 15px;
   white-space: nowrap;
   vertical-align: top; }
