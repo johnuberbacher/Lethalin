@@ -56,10 +56,9 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
 a:active,
-a:hover {
-  outline-width: 0; }
+a:hover { outline-width: 0; }
 
-
+input, textarea, select{ font-family:inherit; }
 /* 2. Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1 {
@@ -306,7 +305,6 @@ section {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a { color: #33AFC8; }
 .button {
-  font-family: 'Roboto', sans-serif;
   outline: none;
   font-size: 16px;
   font-size: 1rem;
@@ -346,7 +344,6 @@ label {
 input[type="text"], input[type="password"], input[type="email"],
 input[type="tel"], input[type="date"], input[type="number"],
 input[type="color"], input[type="url"] {
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 300;
