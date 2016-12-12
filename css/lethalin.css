@@ -409,15 +409,18 @@ ul {
 	cursor: default; }
 .overlay:target { visibility: visible; opacity: 1; transition: opacity 200ms; }
 .modal {
-	margin: 100px auto;
+	margin: 10% 15px;
 	padding: 0px 20px;
 	background: #fff;
 	border: 1px solid #666;
-	width: 100%;
+	width: auto;
 	max-width: 700px;
 	border-radius: 4px;
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 	position: relative; }
+@media (min-width: 768px) {
+  .modal { margin: 10% auto; }
+}
 .modal .close {
 	position: fixed;
 	width: 20px;
