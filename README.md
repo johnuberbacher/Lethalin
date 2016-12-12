@@ -184,7 +184,7 @@ For full-width buttons, stack .button-wide after .button
 ```
 
 
-# Anchors and Buttons
+# Images
 Adding .image will make any image mobile responsive
 
 Stacking .image-round will make any image a circle
