@@ -16,8 +16,8 @@ Lethalin's is designed around a 24 column based system. It was built to scale wi
 The syntax for creating responsive columns is simple:
 ```
 <div class="grid">
-  <class="column">
-    <class="example-column">
+  <div class="column">
+    <div class="example-column">
       .column
     </div>
   </div>
@@ -29,13 +29,13 @@ The .grid class holds all the columns together. It has a default max-width of 10
 The syntax for multiple columns is just as simple:
 ```
 <div class="grid">
-  <class="column sm-12">
-    <class="example-column">
+  <div class="column sm-12">
+    <div class="example-column">
       .column .sm-12
     </div>
   </div>
-  <class="column sm-12">
-    <class="example-column">
+  <div class="column sm-12">
+    <div class="example-column">
       .column .sm-12
     </div>
   </div>
@@ -46,23 +46,23 @@ The syntax for multiple columns is just as simple:
 Lethalin uses 3 different sizes for responsive columns: .sm-#, .md-# and .lg-#
 ```
 <div class="grid">
-  <class="column sm-12 md-6">
-    <class="example-column">
+  <div class="column sm-12 md-6">
+    <div class="example-column">
       .column .sm-12 .md-6
     </div>
   </div>
-  <class="column sm-12 md-6">
-    <class="example-column">
+  <div class="column sm-12 md-6">
+    <div class="example-column">
       .column .sm-12 .md-6
     </div>
   </div>
-  <class="column sm-12 md-6">
-    <class="example-column">
+  <div class="column sm-12 md-6">
+    <div class="example-column">
       .column .sm-12 .md-6
     </div>
   </div>
-  <class="column sm-12 md-6">
-    <class="example-column">
+  <div class="column sm-12 md-6">
+    <div class="example-column">
       .column .sm-12 .md-6
     </div>
   </div>
@@ -73,13 +73,13 @@ Lethalin uses 3 different sizes for responsive columns: .sm-#, .md-# and .lg-#
 Also remember that when not supplying a .sm-# class, .column will treat itself as a 24-width column.
 ```
 <div class="grid">
-  <class="column md-12">
-    <class="example-column">
+  <div class="column md-12">
+    <div class="example-column">
       .column .md-12
     </div>
   </div>
-  <class="column md-12">
-    <class="example-column">
+  <div class="column md-12">
+    <div class="example-column">
       .column .md-12
     </div>
   </div>
