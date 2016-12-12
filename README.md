@@ -12,12 +12,15 @@ Lethalin is also available in minified CSS
 To clone directly from Github: `git clone https://github.com/johnuberbacher/Lethalin.git`
 
 ## Get Started
-[Responsive Boilerplate](#Responsive)
-[Navigation](#Navigation)
-[Anchors & Buttons](#Anchors)
+[Responsive Boilerplate](#responsive-boilerplate)
+
+[Navigation](#navigation)
+
+[Anchors & Buttons](#anchors-and-buttons)
 
 
-## #Responsive Boilerplate
+
+## Responsive Boilerplate
 Lethalin's is designed around a 24 column based system. It was built to scale with mobile-design first. 
 The syntax for creating responsive columns is simple:
 ```
@@ -120,7 +123,7 @@ Also remember that when not supplying a .sm-# class, .column will treat itself a
 ```
 
 
-## #Navigation
+## Navigation
 Navigation markdown is very simple
 ```
 <header>
@@ -145,7 +148,7 @@ header class="sticky">
 ```
 
 
-## #Anchors and Buttons
+## Anchors and Buttons
 Anchor Button's can be styled into buttons using the .button class
 ```
 <a href="#" class="button">Anchor</a>
