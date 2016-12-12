@@ -20,7 +20,8 @@
 - 8. Images
 - 9. Lists
 - 10. Tables
-- 11. Utility Classes
+- 11. Modals
+- 12. Utility Classes
 */
 
 
@@ -387,7 +388,53 @@ ul {
   white-space: nowrap;
   vertical-align: top; }
 
-/* 11. Utility Classes
+  
+/* 11. Modals
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 4;
+	background: rgba(0, 0, 0, 0.5);
+	transition: opacity 200ms;
+	visibility: hidden;
+	opacity: 0; }
+.overlay .cancel {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	cursor: default; }
+.overlay:target { visibility: visible; opacity: 1; transition: opacity 200ms; }
+.modal {
+	margin: 100px auto;
+	padding: 0px 20px;
+	background: #fff;
+	border: 1px solid #666;
+	width: 100%;
+	max-width: 700px;
+	border-radius: 4px;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+	position: relative; }
+.modal .close {
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	top: 20px;
+	right: 20px;
+	opacity: 0.8;
+	transition: all 200ms;
+	font-weight: bold;
+	text-decoration: none;
+	color: #777; }
+.modal .close:hover { opacity: 1; }
+.modal .content { max-height: 400px; overflow: auto; }
+.modal .content p { margin-top: 0px; }
+
+
+/* 12. Utility Classes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .display-table { display: table!important; margin-left: auto; margin-right: auto; }
 .display-block { display: block!important; margin-left: auto; margin-right: auto; }
