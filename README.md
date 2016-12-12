@@ -12,4 +12,12 @@ Lethalin is also available in minified CSS
 To clone directly from Github: `git clone https://github.com/johnuberbacher/Lethalin.git`
 
 ## Getting Started
-Coming Shortly!
+```
+<div class="grid">
+  <class="column">
+    <class="example-column">
+      .column
+    </div>
+  </div>
+</div>
+```
