@@ -12,11 +12,11 @@ Lethalin is also available in minified CSS
 To clone directly from Github: `git clone https://github.com/johnuberbacher/Lethalin.git`
 
 ## Get Started
-[Responsive Boilerplate](#Responsive)
+[Responsive Boilerplate](#responsive-boilerplate)
 
-[Navigation](#Navigation)
+[Navigation](#navigation)
 
-[Anchors & Buttons](#Anchors)
+[Anchors & Buttons](#anchors-and-buttons)
 
 
 
