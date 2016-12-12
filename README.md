@@ -13,8 +13,11 @@ To clone directly from Github: `git clone https://github.com/johnuberbacher/Leth
 
 ## Get Started
 [Responsive Boilerplate](#Responsive)
+
 [Navigation](#Navigation)
+
 [Anchors & Buttons](#Anchors)
+
 
 
 ## Responsive Boilerplate
