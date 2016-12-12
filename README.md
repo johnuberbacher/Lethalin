@@ -11,13 +11,13 @@ Lethalin is also available in minified CSS
 
 To clone directly from Github: `git clone https://github.com/johnuberbacher/Lethalin.git`
 
-## Getting Started
+## Responsive Boilerplate
 Lethalin's is designed around a 24 column based system. It was built to scale with mobile-design first. 
 The syntax for creating responsive columns is simple:
 ```
 <div class="grid">
-  <class="column">
-    <class="example-column">
+  <div class="column">
+    <div class="example-column">
       .column
     </div>
   </div>
@@ -29,13 +29,13 @@ The .grid class holds all the columns together. It has a default max-width of 10
 The syntax for multiple columns is just as simple:
 ```
 <div class="grid">
-  <class="column sm-12">
-    <class="example-column">
+  <div class="column sm-12">
+    <div class="example-column">
       .column .sm-12
     </div>
   </div>
-  <class="column sm-12">
-    <class="example-column">
+  <div class="column sm-12">
+    <div class="example-column">
       .column .sm-12
     </div>
   </div>
@@ -46,23 +46,50 @@ The syntax for multiple columns is just as simple:
 Lethalin uses 3 different sizes for responsive columns: .sm-#, .md-# and .lg-#
 ```
 <div class="grid">
-  <class="column sm-12 md-6">
-    <class="example-column">
+  <div class="column sm-12 md-6">
+    <div class="example-column">
       .column .sm-12 .md-6
     </div>
   </div>
-  <class="column sm-12 md-6">
-    <class="example-column">
+  <div class="column sm-12 md-6">
+    <div class="example-column">
       .column .sm-12 .md-6
     </div>
   </div>
-  <class="column sm-12 md-6">
-    <class="example-column">
+  <div class="column sm-12 md-6">
+    <div class="example-column">
       .column .sm-12 .md-6
     </div>
   </div>
-  <class="column sm-12 md-6">
-    <class="example-column">
+  <div class="column sm-12 md-6">
+    <div class="example-column">
+      .column .sm-12 .md-6
+    </div>
+  </div>
+</div>
+```
+
+
+Multiple sized columns can also be stacked:
+```
+<div class="grid">
+  <div class="column sm-12 md-6">
+    <div class="example-column">
+      .column .sm-12 .md-6
+    </div>
+  </div>
+  <div class="column sm-12 md-6">
+    <div class="example-column">
+      .column .sm-12 .md-6
+    </div>
+  </div>
+  <div class="column sm-12 md-6">
+    <div class="example-column">
+      .column .sm-12 .md-6
+    </div>
+  </div>
+  <div class="column sm-12 md-6">
+    <div class="example-column">
       .column .sm-12 .md-6
     </div>
   </div>
@@ -73,15 +100,69 @@ Lethalin uses 3 different sizes for responsive columns: .sm-#, .md-# and .lg-#
 Also remember that when not supplying a .sm-# class, .column will treat itself as a 24-width column.
 ```
 <div class="grid">
-  <class="column md-12">
-    <class="example-column">
+  <div class="column md-12">
+    <div class="example-column">
       .column .md-12
     </div>
   </div>
-  <class="column md-12">
-    <class="example-column">
+  <div class="column md-12">
+    <div class="example-column">
       .column .md-12
     </div>
+  </div>
+</div>
+```
+
+
+## Navigation
+Navigation markdown is very simple
+```
+<header>
+  <div class="grid">
+    <a href="#" class="header">
+      Website Logo
+    </a>
+    <div class="navbar">
+      <a class="navbar-open"></a>
+      <ul class="nav-expand">
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#demo">Demos</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+```
+You can give your header the .sticky class to create a fixed header, just make sure to give your body a corresponding margin-top.
+```
+header class="sticky">
+```
+
+
+## Anchors and Buttons
+Anchor Button's can be styled into buttons using the .button class
+```
+<a href="#" class="button">Anchor</a>
+```
+
+Turn inputs into buttons using the same .button class
+```
+<input type="submit" class="button" value="Submit">
+```
+
+Center a button with the .display-table utility class
+```
+<input type="submit" class="button display-table" value="Submit">
+```
+
+For full-width buttons, stack .button-wide after .button
+```
+<div class="grid">
+  <div class="column md-12">
+    <a class="button button-wide">.button .button-wide</a>
+  </div>
+  <div class="column md-12">
+    <a class="button button-wide">.button .button-wide</a>
   </div>
 </div>
 ```
