@@ -52,6 +52,8 @@ table { border-spacing: 0; border-collapse: collapse; }
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 a {
+  outline: none;
+  border: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
 a:active,
@@ -180,26 +182,26 @@ p { font-size: 16px;
 /* 4. Header & Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 header {
-  background: #fff;
+  background: #FFFFFF;
   padding: 0;
   width: 100%;
   z-index: 20;
-  min-height: 55px;
-  border-bottom: 1px solid #E3E3E3; }
+  height: 55px;
+  border-bottom: 1px solid #E1E1E1; }
 header.sticky {
   position: fixed;
   top: 0;
   left: 0;
   right: 0; }
 header a.header {
-  margin: 5px 0px 0px 7.5px;
+  margin: 15px 0px 0px 7.5px;
   text-decoration: none;
   float: left;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
-header a.header img { display: block; }
+header a.header img { display: block; outline: none; border: none; }
 header .navbar { float:right; }
 @media (min-width: 768px) {
   header .navbar { display: block; }
@@ -208,14 +210,14 @@ header .navbar  ul {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 55px;
+  top: 54px;
   padding: 0;
   margin: 0;
   z-index: 3;
   display: none;
-  background: #ffffff;
-  border-bottom: 1px solid #E3E3E3;
-  border-top: 1px solid #E3E3E3; }
+  background: #FFFFFF;
+  border-bottom: 1px solid #E1E1E1;
+  border-top: 1px solid #E1E1E1; }
 @media (min-width: 768px) {
   header .navbar ul.nav-expand {
     border-top: none;
@@ -237,7 +239,7 @@ header .navbar ul li a {
   display: block;
   transition: color 0.4s;
   cursor: pointer;
-  border-bottom: 1px solid #E3E3E3; }
+  border-bottom: 1px solid #E1E1E1; }
 @media (min-width: 768px) {
   header .navbar ul li a {
     display: inline-block;
@@ -255,7 +257,7 @@ header .navbar ul.nav-expand li ul {
     position: absolute;
     left: 0;
     top: 37px;
-    border: 1px solid #E3E3E3;
+    border: 1px solid #E1E1E1;
     width: 150px; }
 }
 header .navbar ul.nav-expand li ul li a {
@@ -281,7 +283,7 @@ section {
   display: flex;
   padding: 50px 0px;
   background: rgb(245, 249, 249);
-  border-bottom: 1px solid #dfe5e8; }
+  border-bottom: 1px solid #DFE5E8; }
 
 
 /* 6. Links & Buttons
@@ -334,7 +336,7 @@ input[type="color"], input[type="url"], textarea, select {
   width: 100%;
   outline: none;
   border-radius: 4px;
-  border: 1px solid #dfe5e8;
+  border: 1px solid #DFE5E8;
   color: #6B645E;
   margin-bottom: 1em; }
 textarea {
