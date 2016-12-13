@@ -24,6 +24,8 @@ To clone directly from Github: `git clone https://github.com/johnuberbacher/Leth
 
 [Tables](#tables)
 
+[Modals](#modals)
+
 [Utility Classes](#utility-classes)
 
 
@@ -257,6 +259,27 @@ Tables are also very easy, just wrap your standard table inside a .table class.
     </table>
   </div>
 </div>
+```
+
+
+# Modals
+Modal overlays require very little mark up. Right now Lethalin only supports one modal open at a time. Modals are supported on devices of all sizes. 
+
+To create modals, use the following mark up:
+```
+<div id="examplemodal-modal" class="overlay">
+  <div class="modal">
+    <h2>Modal Overlay</h2>
+    <div class="content">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+</div>
+```
+Every instance of a modal will require the id to be "IDNAME-modal". Javascript checks the DOM for any elements with an id ending in "-modal", if it's found, its considered a modal.
+To trigger and open a modal, give any anchor, button or element the "button-modal" class and a matching id. 
+```
+<a id="examplemodal" class="button button-modal">Get Started Today</a>
 ```
 
 
