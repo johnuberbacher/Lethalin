@@ -1,5 +1,5 @@
 /*
-* Lethalin v1.0.1
+* Lethalin v1.0.2
 * Copyright 2016, John Uberbacher
 * www.lethalin.com
 * Free to use under the MIT license.
@@ -20,7 +20,8 @@
 - 8. Images
 - 9. Lists
 - 10. Tables
-- 11. Utility Classes
+- 11. Modals
+- 12. Utility Classes
 */
 
 
@@ -43,7 +44,7 @@ aside,
 footer,
 header,
 nav,
-section { display: block; }
+section { display: block; width: 100%; }
 table { border-spacing: 0; border-collapse: collapse; }
 *,
 *:before,
@@ -52,6 +53,8 @@ table { border-spacing: 0; border-collapse: collapse; }
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 a {
+  outline: none;
+  border: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
 a:active,
@@ -180,26 +183,26 @@ p { font-size: 16px;
 /* 4. Header & Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 header {
-  background: #fff;
+  background: #FFFFFF;
   padding: 0;
   width: 100%;
   z-index: 20;
-  min-height: 55px;
-  border-bottom: 1px solid #E3E3E3; }
+  height: 55px;
+  border-bottom: 1px solid #E1E1E1; }
 header.sticky {
   position: fixed;
   top: 0;
   left: 0;
   right: 0; }
 header a.header {
-  margin: 5px 0px 0px 7.5px;
+  margin: 15px 0px 0px 7.5px;
   text-decoration: none;
   float: left;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
-header a.header img { display: block; }
+header a.header img { display: block; outline: none; border: none; }
 header .navbar { float:right; }
 @media (min-width: 768px) {
   header .navbar { display: block; }
@@ -208,14 +211,14 @@ header .navbar  ul {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 55px;
+  top: 54px;
   padding: 0;
   margin: 0;
   z-index: 3;
   display: none;
-  background: #ffffff;
-  border-bottom: 1px solid #E3E3E3;
-  border-top: 1px solid #E3E3E3; }
+  background: #FFFFFF;
+  border-bottom: 1px solid #E1E1E1;
+  border-top: 1px solid #E1E1E1; }
 @media (min-width: 768px) {
   header .navbar ul.nav-expand {
     border-top: none;
@@ -237,7 +240,7 @@ header .navbar ul li a {
   display: block;
   transition: color 0.4s;
   cursor: pointer;
-  border-bottom: 1px solid #E3E3E3; }
+  border-bottom: 1px solid #E1E1E1; }
 @media (min-width: 768px) {
   header .navbar ul li a {
     display: inline-block;
@@ -254,8 +257,8 @@ header .navbar ul.nav-expand li ul {
   header .navbar ul.nav-expand li ul {
     position: absolute;
     left: 0;
-    top: 37px;
-    border: 1px solid #E3E3E3;
+    top: 36px;
+    border: 1px solid #E1E1E1;
     width: 150px; }
 }
 header .navbar ul.nav-expand li ul li a {
@@ -281,7 +284,7 @@ section {
   display: flex;
   padding: 50px 0px;
   background: rgb(245, 249, 249);
-  border-bottom: 1px solid #dfe5e8; }
+  border-bottom: 1px solid #DFE5E8; }
 
 
 /* 6. Links & Buttons
@@ -334,7 +337,7 @@ input[type="color"], input[type="url"], textarea, select {
   width: 100%;
   outline: none;
   border-radius: 4px;
-  border: 1px solid #dfe5e8;
+  border: 1px solid #DFE5E8;
   color: #6B645E;
   margin-bottom: 1em; }
 textarea {
@@ -385,7 +388,56 @@ ul {
   white-space: nowrap;
   vertical-align: top; }
 
-/* 11. Utility Classes
+  
+/* 11. Modals
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 4;
+	background: rgba(0, 0, 0, 0.5);
+	transition: opacity 200ms;
+	visibility: hidden;
+	opacity: 0; }
+.overlay .cancel {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	cursor: default; }
+.overlay:target { visibility: visible; opacity: 1; transition: opacity 200ms; }
+.modal {
+	margin: 10% 15px;
+	padding: 0px 20px;
+	background: #fff;
+	border: 1px solid #666;
+	width: auto;
+	max-width: 700px;
+	border-radius: 4px;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+	position: relative; }
+@media (min-width: 768px) {
+  .modal { margin: 10% auto; }
+}
+.modal .close {
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	top: 20px;
+	right: 20px;
+	opacity: 0.8;
+	transition: all 200ms;
+	font-weight: bold;
+	text-decoration: none;
+	color: #777; }
+.modal .close:hover { opacity: 1; }
+.modal .content { max-height: 400px; overflow: auto; }
+.modal .content p { margin-top: 0px; }
+
+
+/* 12. Utility Classes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .display-table { display: table!important; margin-left: auto; margin-right: auto; }
 .display-block { display: block!important; margin-left: auto; margin-right: auto; }
