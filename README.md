@@ -29,7 +29,7 @@ To clone directly from Github: `git clone https://github.com/johnuberbacher/Leth
 [Utility Classes](#utility-classes)
 
 
-# Responsive Boilerplate
+## Responsive Boilerplate
 Lethalin's is designed around a 24 column based system. It was built to scale with mobile-design first. 
 The syntax for creating responsive columns is simple:
 ```
@@ -42,7 +42,6 @@ The syntax for creating responsive columns is simple:
 </div>
 ```
 The .grid class holds all the columns together. It has a default max-width of 1000px, which can be changed easily. Anything smaller than 1000px retains a responsive width and height.
-
 
 The syntax for multiple columns is just as simple:
 ```
@@ -59,8 +58,6 @@ The syntax for multiple columns is just as simple:
   </div>
 </div>
 ```
-
-
 Lethalin uses 3 different sizes for responsive columns: .sm-#, .md-# and .lg-#
 ```
 <div class="grid">
@@ -86,8 +83,6 @@ Lethalin uses 3 different sizes for responsive columns: .sm-#, .md-# and .lg-#
   </div>
 </div>
 ```
-
-
 Multiple sized columns can also be stacked:
 ```
 <div class="grid">
@@ -113,8 +108,6 @@ Multiple sized columns can also be stacked:
   </div>
 </div>
 ```
-
-
 Also remember that when not supplying a .sm-# class, .column will treat itself as a 24-width column.
 ```
 <div class="grid">
@@ -132,7 +125,7 @@ Also remember that when not supplying a .sm-# class, .column will treat itself a
 ```
 
 
-# Navigation
+## Navigation
 Navigation markdown is very simple
 ```
 <header>
@@ -157,7 +150,7 @@ header class="sticky">
 ```
 
 
-# Anchors and Buttons
+## Anchors and Buttons
 Anchor Button's can be styled into buttons using the .button class
 ```
 <a href="#" class="button">Anchor</a>
@@ -186,7 +179,7 @@ For full-width buttons, stack .button-wide after .button
 ```
 
 
-# Images
+## Images
 Adding .image will make any image mobile responsive
 
 Stacking .image-round will make any image a circle
@@ -202,7 +195,7 @@ Stacking .display-block will center any image
 ```
 
 
-# Forms
+## Forms
 Form syntax is nearly unchanged. By default form fields have basic styles just to clean up paddings and margins, just surround the necessary columns in a < form >
 ```
 <form>
@@ -226,7 +219,7 @@ Form syntax is nearly unchanged. By default form fields have basic styles just t
 ```
 
 
-# Tables
+## Tables
 Tables are also very easy, just wrap your standard table inside a .table class.
 ```
 <div class="column">
@@ -262,7 +255,7 @@ Tables are also very easy, just wrap your standard table inside a .table class.
 ```
 
 
-# Modals
+## Modals
 Modal overlays require very little mark up. Right now Lethalin only supports one modal open at a time. Modals are supported on devices of all sizes. 
 
 To create modals, use the following mark up:
@@ -283,7 +276,7 @@ To trigger and open a modal, give any anchor, button or element the "button-moda
 ```
 
 
-# Utility Classes
+## Utility Classes
 Basic helper classes, these will be updated as the framework grows.
 ```
 .display-block 
