@@ -256,7 +256,8 @@ Tables are also very easy, just wrap your standard table inside a .table class.
 
 
 ## Modals
-Modal overlays require very little mark up. Right now Lethalin only supports one modal open at a time. Modals are supported on devices of all sizes. 
+Modal overlays require very little mark up and are supported on devices of all different sizes. 
+It's always best practice to place your modals towards the top of your document to avoid any confliction with other elements. 
 
 To create modals, use the following mark up:
 ```
