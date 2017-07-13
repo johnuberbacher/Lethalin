@@ -1,4 +1,4 @@
-/*
+﻿/*
 * Lethalin v1.0.3
 * Copyright 2016, John Uberbacher
 * www.lethalin.com
@@ -90,9 +90,9 @@ p { font-size: 16px;
   margin-left: auto;
   padding-left: 7.5px;
   padding-right: 7.5px; }
-
 @media (min-width: 1018px) {
   .grid { width: 1000px; }
+  .grid .wide { width: 1200px; }
 }
 .column {
   width: 100%;
