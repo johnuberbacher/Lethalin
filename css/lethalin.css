@@ -92,7 +92,7 @@ p { font-size: 16px;
   padding-right: 7.5px; }
 @media (min-width: 1018px) {
   .grid { width: 1000px; }
-  .grid .wide { width: 1200px; }
+  .grid .wide { width: 100% max-width: 1200px; }
 }
 .column {
   width: 100%;
