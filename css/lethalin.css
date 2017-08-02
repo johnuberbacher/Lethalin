@@ -430,3 +430,4 @@ ul {
 .text-right { text-align: right!important; }
 .text-left { text-align: left!important; }
 .text-justify { text-align: justify !important; }
+.column-center { margin: 0px auto; float: none; }
