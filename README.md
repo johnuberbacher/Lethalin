@@ -132,8 +132,7 @@ Adding the .wide utility class to any .grid object will set your grid to a maxim
     </div>
   </div>
 </div>
-
-
+```
 ## Navigation
 Navigation markdown is very simple
 ```
@@ -305,11 +304,11 @@ Basic helper classes, these will be updated as the framework grows.
 ```
 
 ```
- .display-inline-block
+.display-inline-block
 ```
 
 ```
- .display-none
+.display-none
 ```
 
 ```
