@@ -123,6 +123,15 @@ Also remember that when not supplying a .sm-# class, .column will treat itself a
   </div>
 </div>
 ```
+Adding the .wide utility class to any .grid object will set your grid to a maximum width of 1200px
+```
+<div class="grid wide">
+  <div class="column">
+    <div class="example-column">
+      .column .md-12
+    </div>
+  </div>
+</div>
 
 
 ## Navigation
@@ -279,6 +288,14 @@ To trigger and open a modal, give any anchor, button or element the "button-moda
 
 ## Utility Classes
 Basic helper classes, these will be updated as the framework grows.
+```
+.wide
+```
+
+```
+.column-center
+```
+
 ```
 .display-block 
 ```
