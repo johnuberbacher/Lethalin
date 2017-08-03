@@ -155,7 +155,7 @@ Navigation markdown is very simple
 ```
 You can give your header the .sticky class to create a fixed header, just make sure to give your body a corresponding margin-top.
 ```
-header class="sticky">
+<header class="sticky">
 ```
 
 
